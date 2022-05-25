@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+:root {
+
+    ---cornula: rgb(255, 255, 255);
+    ---cornula2: rgb(0, 0, 0);
+    ---corfundo: rgba(10, 112, 87, 0.63);
+    ---corfundodiv: rgba(15, 92, 56, 0.726);
+    ---cordestaque: rgba(53,140,121);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: var(---cornula);
+}
+
+/*menu-principal*/
+
+nav{
+
+    width: 100%;
+    height: auto;
+    background-color: var(---cordestaque);
+    position: fixed;
+    top: 0;
+}
+
+.dp-menu ul{
+
+    max-width: 1200px;
+    list-style-type: none;
+    text-align: center;    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.dp-menu ul li{
+
+    display: inline;    
+}
+
+
+.dp-menu ul li a{
+
+    padding: 10px;
+    display: inline-block;
+    color: var(---cornula);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-right: 2px solid black; 
+}
+
+.dp-menu ul li a:hover {
+
+    background-color: var(---corfundo);
+    transition: .5s;
+}
+
+/*div*/
+
+.rpd{
+   
+    background-color: var(---cornula);
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+article.um {
+
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+/*rodapé*/
+
+.rpd .um div {
+    
+   margin: 100%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    color: var(---cornula2);
+    margin-right: 100px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+/*logo*/
+
+.logo{
+    
+    width: 200px;
+    height: 100px;
+}
+
+.rpd .um .borda {
+
+    width: 1px;
+    height: 100px;
+    padding: 0;
+    background-color:grey;
+}
+
+.rpd .dois div {
+
+    width: 100%;
+    height: auto;
+    background-color: var(---cordestaque);
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*div_rodape_download*/
+
+.rpd .download h2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*div_rodape_contato*/
+
+.rpd .contato h2 {
+
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+}
+.rpd .contato p {
+
+    font-size: .75em;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5px;
+}
+
+/*div_rodape_social*/
+
+.rpd .social h2 {
+
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.social i {
+
+    font-size: 30px;
+    display: inline-block;
+}
+
+.social i:hover{
+
+    transition-delay: .2s;
+}
+
+/*div_rodape_imagem*/
+
+.rpd img {
+
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+}
+
+.bloco1{
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco2{
+
+    width: 100%;
+    background-color: aqua;
+    height: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*banner*/
+
+.banner div {
+
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: var(---cornula2);
+    padding-top: 10px;
+    margin-top: 10%;
+}
+
+/*conteudo*/
+
+.serviçoum .serviçodois img {
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+/*adicionei isso*/
+section.serviçoum {
+    width: 100%;
+    height: 100vh;
+}
+
+article.uno{
+
+    background-image: url(imagens/umacriancaai.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+article.dos{
+
+    background-image: url(imagens/serviços.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/*sómente isso de cima*/
+
+.serviçoum p {
+
+    color: var(---cornula2);
+    text-align: center;
+    font-size: 40px;
+    color: var(---cornula2);
+}
+
+@media only screen and (max-width: 768px) {
+
+     article.um {
+
+        text-align: center;       
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rpd .um .borda {
+
+        width: 1px;
+        height: 100px;
+        padding: 0;
+        background-color:grey;
+        display: none;
+    }
+
+    .rpd .um div {
+    
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        color: var(---cornula2);
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
