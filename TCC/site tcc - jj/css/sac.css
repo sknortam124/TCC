@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+body {  
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.duvida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border-color: white;
+    border-bottom-color: black;
+    border-right: white;
+    border-left: white;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.accordion:hover {
+    background-image: linear-gradient(white, rgb(201, 199, 199));
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 17px;
+    width: 50%;
+}
+
+.accordion:after {
+    content: "\2228";
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+  content: "\2039";
+  font-size: 25px;
+}
+
+.atende {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 90px;
+}
+
+div {
+    width: 400px;
+    display: inline-block;
+    font-size: 21px;  
+}
+
+.sub {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.atende div ul {
+    margin-left: 80px;
+}
+
+article div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+article div ul li a:hover {
+    color: rgb(0, 47, 255);
+}
+
+article form {
+    text-align: center;
+    font-size: 20px;
+}
+
+article form input {
+    width: 200px;
+    height: 45px;
+    border: 20px, black;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+
+    margin-bottom: 10px;
+    outline: 0;
+    font-size: 19px;   
+}
+
+#sugest {
+    width: 400px;
+    display: flex;
+}
+
+article form button {
+    background-color: #358c79;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    margin-top: 25px;
+    font-size: 16px;
+         
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: white;
+}
+    
+article form button:hover {
+    background: #fff;
+    color: black;
+}
+
+
+@media screen and (max-width:650px){
+    .accordion {
+        width: 80%;
+    }
+    article div.panel {
+        width: 70%;
+    }
+
+    article div.screen {
+        width: 250px;
+    }
+
+    #infos {
+        flex-wrap: wrap;
+    }
+    
+    #hora {
+        margin-top: 80px;
+    }
+
+    article form {
+        width: 300px;
+    }
+
+    article form input {
+        display: flex;
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    #sugest {
+        width: 300px;
+        display: table-column;
+    }
+}
