@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+:root {
+
+    ---cornula: rgb(255, 255, 255);
+    ---cornula2: rgb(0, 0, 0);
+    ---corfundo: rgba(10, 112, 87, 0.63);
+    ---corfundo2: rgba(10, 92, 71, 0.822);
+    ---corfundodiv: rgba(15, 92, 56, 0.726);
+    ---cordestaque: rgba(53,140,121);
+    ---cinza: rgb(119, 117, 117);
+}
+
+*{
+
+    margin: auto 0;
+    padding: 0;
+}
+
+.img {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/FECHE.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/telefone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*texto*/
+
+.textoimgh2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: var(---cornula);
+    padding-top: 50px;
+    text-shadow: var(---cornula2) 2px 2px 2px;
+}
+
+.textoimgp {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(---cornula);
+    text-shadow: var(---cornula2) 2px 2px 2px;
+}
+
+/*texto*/
+
+.motoristas {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(---cornula);
+}
+
+.motoristas div {
+    width: 45%;
+    height: auto;
+    font-size: 45px;
+    text-indent: 30px;
+    color: white;
+}
+
+.motoristas img {
+    height: 80vh;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*texto slide*/
+
+.motoristas .lv_two .textoslideh2 {
+    text-align: center;
+    text-indent: +10px;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: var(---cornula2);
+}
+
+.motoristas .lv_two .textoslidep {
+    text-align: center;
+    text-indent: +10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: var(---cornula2);
+    text-shadow: var(---cornula) 2px 2px 2px;
+}
+
+/*texto slide*/
+
+/*tamanho imagem slide*/
+
+#slideshow .mySlides{
+
+    width: 50vw;
+    height: 80vh;
+    background-size: cover;
+}
+
+@media only screen and (max-width:760px){
+    .motoristas {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .motoristas div {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

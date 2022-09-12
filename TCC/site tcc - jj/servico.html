@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servico.css">
+    <link rel="stylesheet" href="css/menupé.css">
+    <script src="https://kit.fontawesome.com/e4ca62b20f.js" crossorigin="anonymous"></script>
+    <script src="./java/menuzin.js"></script>
+    <title>Serviços</title>
+
+</head>
+
+<body>
+    
+    <nav class="dp-menu">
+        
+        <ul>
+            <li class="home"><a href="home.html">Home</a></li>
+            <li class="uniao2"><a href="sobre.html">Sobre Nós</a></li>                     
+            <li class="uniao"><a href="servico.html">Serviços</a></li>
+            <li class="uniao"><a href="sac.html">Sac</a></li>
+            <li class="cadastro"><a href="login.html">Minha Conta</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&#8801</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>                    
+            <a href="servico.html">Serviços</a>
+            <a href="sac.html">SAC</a>
+            <a href="login.html">Minha Conta</a>
+        </div>
+    </div>
+
+<!--divisão-->
+
+    <article class="img">
+
+        <div class="divimg">
+
+            <h2 class="textoimgh2">
+
+                Nosso Aplicativo
+
+            </h2>
+
+            <p class="textoimgp">
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Ullam, aperiam dolor ut facere error at neque iusto eum suscipit <br> cumque itaque impedit. At illum doloremque dolores voluptatibus <br> molestias sunt tempora.
+
+            </p>
+
+        </div>
+
+    </article>
+
+<!--slideshow-->
+
+    <article class="motoristas">
+        
+        <div id="slideshow">
+
+            <img class="mySlides" src="imgslide/slide1.jpeg" >
+            <img class="mySlides" src="imgslide/slide2.jpeg" >
+            <img class="mySlides" src="imgslide/slide3.jpeg" >
+
+        </div>
+
+        <div class="lv_two">
+            
+            <h2 class="textoslideh2">Nossos motoristas</h2>
+
+            <p class="textoslidep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore explicabo sapiente eveniet quo natus tenetur iste, magni totam deserunt adipisci nemo architecto  numquam ullam, dolor hic, nesciunt aut eaque nam!</p>
+        
+        </div>
+    
+    </article>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000);// Change image every 2 seconds
+        }
+        </script>
+
+<!--slideshow-->
+
+    <article class="img2">
+
+        <div class="divimg2">
+
+            <h2 class="textoimgh2">
+
+                Sac
+
+            </h2>
+
+            <p class="textoimgp">
+
+                Cobrimos os serviços de sac, <br> tirando duvidas, dando sugestões, ajudando a obter <br> informações, recebendo reclamações <br> do cliente e resolvendo problemas relacionados a empresa
+
+            </p>
+
+        </div>
+
+    </article>
+
+<!--divisão-->
+
+    <footer class="rpd">
+
+        <article class="divisoria">
+
+            <div class="imagem">
+
+                <img src="img/logo 6 maozinha 3.png" alt="">
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="download">
+            
+                <h2>Faça o download</h2>
+
+                <p class="android"><a href="">Android</a></p> 
+                <p><a href="">IOS</a></p>
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="contatos">
+            
+                <h2>Contatos</h2>
+
+                <p class="tel">Tel 0800 123-999</p>
+                <p>Whats (11) 20445-5665</p>
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="social">
+            
+                <h2>Redes sociais</h2> <br>
+                <div class="circulo"><a href="https://www.facebook.com/Alaaplicativo/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="circulo"><a href="https://www.instagram.com/ala_transportes/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="circulo"><a href="https://www.linkedin.com/in/ala-transportes-711a86237/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        
+            </div>
+
+        </article>
+
+    </footer>
+
+    <footer class="rpd2">
+
+        <article class="copyright">
+        
+            <div class="divcopyright">
+                <p>©2022 A.L.A Transportes.</p>
+            </div>
+
+        </article>
+
+    </footer>
+
+</body>
+
+</html>

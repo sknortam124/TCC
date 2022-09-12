@@ -161,9 +161,12 @@ main form a p:hover {
     color: rgb(0, 47, 255);
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:650px){
     main form{
         width: 350px;
     }
     
+    header {
+        margin-top: 0px;
+    }
 }
