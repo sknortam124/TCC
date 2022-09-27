@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+:root {
+
+    ---cornula: rgb(255, 255, 255);
+    ---cornula2: rgb(0, 0, 0);
+    ---corfundo: rgba(10, 112, 87, 0.63);
+    ---corfundo2: rgba(10, 92, 71, 0.822);
+    ---corfundodiv: rgba(15, 92, 56, 0.726);
+    ---cordestaque: rgba(53,140,121);
+    ---cinza: rgb(119, 117, 117);
+}
+
+*{
+
+    margin: auto 0;
+    padding: 0;
+}
+
+section.sectionimg {
+    width: 100%;
+    height: auto;
+}
+
+section.sectionimg img{
+    width: 40vw;
+    height: 50vh;
+    margin: 20px;
+    margin-top: 5%;
+}
+
+section.sectionimg .textozinho{
+
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.sectionimg .img2{
+  
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+#sectionimgg {
+
+    margin-bottom: 150px;
+}
+
+/*texto*/
+
+.textoimgh2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: var(---cornula2);
+    align-items: center;
+}
+
+.textoimgp {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(---cornula2);
+    text-align: justify;
+}
+
+/*texto*/
+
+.motoristas {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(---cornula);
+}
+
+.motoristas div {
+    width: 45%;
+    height: auto;
+    font-size: 45px;
+    text-indent: 30px;
+    color: white;
+}
+
+.motoristas .lv_two {
+    
+    max-width: 600px;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.motoristas img {
+    height: 80vh;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*texto slide*/
+
+.motoristas .lv_two .textoslideh2 {
+    text-align: center;
+    text-indent: +10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(---cornula2);
+}
+
+.motoristas .lv_two .textoslidep {
+    text-align: justify;
+    text-indent: +10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(---cornula2);
+    text-shadow: var(---cornula) 2px 2px 2px;
+}
+
+/*tamanho imagem slide*/
+#slideshow .mySlides{
+
+    width: 40vw;
+    height: 50vh;
+    background-size: cover;
+    box-shadow: 3px 3px 3px 3px var(---cornula2);
+}
+
+@media only screen and (max-width:760px){
+    .motoristas {
+
+        display: table;
+        max-width: 750px;
+    }
+
+    .motoristas div {
+
+        width: 95vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #slideshow {
+
+        width: 95vw;
+        max-width: 750px;
+    }
+
+    #slideshow .mySlides{
+
+        width: 95vw;
+    }
+
+    .sectionimg {
+
+        flex-wrap: wrap;
+    }
+
+    .sectionimg .img2{
+
+        flex-direction: column;
+    }
+
+    .sectionimg .img2 img{
+
+        width: 100%;
+        margin: 0;
+    }
+}

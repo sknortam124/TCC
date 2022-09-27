@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    box-shadow: 30px 0px 30px black;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header {
+    min-height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'poppins', sans-serif;
+    background-color: #397f70;
+}
+
+header h1 {
+    font-size: 25px;
+    color: white;
+    padding-right: 15px;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#397f70, white);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+    
+
+main form {
+    margin-top: 5%;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 30px 30px 30px gray;
+    border-radius: 18px;
+    padding: 2%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container {
+    margin-top: 20px;
+    width: 100%;
+    border: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container input{
+    width: 90%;
+    height: 45px;
+    padding: 8px 15px;
+    border: 20px, black;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    outline: 0;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: rgb(12, 26, 40);
+}
+
+main form .password-container {
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .password-container i {
+    position: absolute;
+    right: 8%;
+    top: 35%;
+    color: rgb(137, 139, 135);
+    cursor: pointer;
+}
+
+main form .password-container #eye {
+    display: none;
+}
+
+main form .passwords-infos {
+    width: 90%;
+    margin-top: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main form .passwords-infos a {
+    transition: 0.2s ease-in-out;
+}
+
+main form .passwords-infos a:hover {
+    color: #2718fe;
+}
+
+main form button {
+    background-color: #358c79;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 9px;
+    margin-top: 25px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: white;
+}
+
+main form button:hover {
+    background: #fff;
+    color: black;
+}
+
+main form a {
+    width: 100%;
+    margin-top: 10%;
+
+    align-items: left;
+}
+
+main form a p {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(116, 110, 110);
+    transition: 0.2s ease-in-out; 
+    margin-left: 15px;
+}
+
+main form a p:hover {
+    color: rgb(0, 47, 255);
+}
+
+@media only screen and (max-width:650px){
+    main form{
+        width: 350px;
+    }
+    
+    header {
+        margin-top: 0px;
+    }
+}

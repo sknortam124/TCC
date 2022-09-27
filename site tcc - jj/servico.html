@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servico.css">
+    <link rel="stylesheet" href="css/menupé.css">
+    <script src="https://kit.fontawesome.com/e4ca62b20f.js" crossorigin="anonymous"></script>
+    <script src="./java/menuzin.js"></script>
+    <title>Serviços</title>
+
+</head>
+
+<body>
+    
+    <nav class="dp-menu">
+        
+        <ul>
+            <li class="home"><a href="home.html">Home</a></li>
+            <li class="uniao2"><a href="sobre.html">Sobre Nós</a></li>                     
+            <li class="uniao" id="Servico"><a href="servico.html">Serviços</a></li>
+            <li class="uniao"><a href="sac.html">Sac</a></li>
+            <li class="cadastro"><a href="login.html">Minha Conta</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" id="unico">&#8801</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>                    
+            <a href="servico.html">Serviços</a>
+            <a href="sac.html">SAC</a>
+            <a href="login.html">Minha Conta</a>
+        </div>
+    </div>
+
+<!--divisão-->
+<section class="sectionimg">
+
+    <article class="img2">
+
+        <img src="img/FECHE.JPG" alt="">
+
+        <article class="divimg2">
+
+            <div class="textozinho">
+
+                <h2 class="textoimgh2">
+
+                    Nosso Aplicativo
+
+                </h2>
+
+                <p class="textoimgp">
+
+                    ALA é um aplicativo de transporte privado voltado ao público PcD, tendo um uso intuitivo para nossos clientes, possuindo um visual simples e de fácil navegação.
+
+                </p>
+
+                <p class="textoimgp">
+
+                    Também possuindo um modo de acessibilidade que pode ser ativado logo no primeiro uso do aplicativo com um toque de dois dedos na parte inferior direita da tela, assim recebendo instruções de uso  escritas e por voz. 
+
+                </p>
+
+            </div>
+
+        </article>
+
+    </article>
+
+</section>
+
+<!--slideshow-->
+
+    <article class="motoristas" id="drei">
+
+        <div class="lv_two">
+            
+            <h2 class="textoslideh2">Nossos motoristas</h2>
+
+            <p class="textoslidep">
+
+                Assim que nossos serviços são requisitados nosso sistema mostrará os motoristas capacitados e treinados para o atendimento do nosso público na região.
+
+            </p>
+
+            <p class="textoslidep">
+
+                Trazendo assim uma maior disponibilidade, velocidade no atendimento, qualidade e conforto por meio das viagens adaptadas para o passageiro.
+
+            </p>
+        
+        </div>
+
+        <div id="slideshow">
+
+                <img class="mySlides" src="imgslide/slide1.jpeg" >
+                <img class="mySlides" src="imgslide/slide2.jpeg" >
+                <img class="mySlides" src="imgslide/slide3.jpeg" >
+
+        </div>
+
+    </article>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500);// Change image every 2 seconds
+        }
+        </script>
+
+<!--slideshow-->
+<section class="sectionimg" id="sectionimgg">
+
+    <article class="img2">
+
+            <img src="img/telefone.jpg" alt="">       
+
+        <article class="divimg2">
+
+            <div class="textozinho">
+
+                 <h2 class="textoimgh2">
+
+                    Sac
+
+                </h2>
+
+                <p class="textoimgp">
+
+                    Nosso Serviço de Atendimento ao Cliente é o setor da nossa empresa voltada ao auxílio para nossos clientes, seja ouvindo as reclamações e repassando  à nossa equipe ou auxiliando na resolução de quaisquer problemas que ocorram no uso do nosso aplicativo ou durante as viagens.
+
+                </p>
+                
+            </div>
+
+        </article>
+
+    </article>
+
+</section>
+
+<!--divisão-->
+
+    <footer class="rpd">
+
+        <article class="divisoria">
+
+            <div class="imagem" id="imagem">
+
+                <img id="logorodape" src="img/logo 6 maozinha 3.png" alt="">
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="download">
+            
+                <h2>Faça o download</h2>
+
+                <p class="android"><a href="">Android</a></p> 
+                <p><a href="">IOS</a></p>
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="contatos">
+            
+                <h2>Contatos</h2>
+
+                <p class="tel">Tel 0800 123-999</p>
+                <p>Whats (11) 20445-5665</p>
+        
+            </div>
+
+            <div class="divisao"></div>
+
+            <div class="social">
+            
+                <h2>Redes sociais</h2> <br>
+                <div class="circulo"><a href="https://www.facebook.com/Alaaplicativo/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="circulo"><a href="https://www.instagram.com/ala_transportes/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="circulo"><a href="https://www.linkedin.com/in/ala-transportes-711a86237/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+        
+            </div>
+
+        </article>
+
+    </footer>
+
+    <footer class="rpd2">
+
+        <article class="copyright">
+        
+            <div class="divcopyright">
+                <p>©2022 A.L.A Transportes.</p>
+            </div>
+
+        </article>
+
+    </footer>
+
+</body>
+
+</html>

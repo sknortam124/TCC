@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+:root {
+
+    ---cornula: rgb(255, 255, 255);
+    ---cornula2: rgb(0, 0, 0);
+    ---corfundo: rgba(10, 112, 87, 0.63);
+    ---corfundo2: rgba(10, 92, 71, 0.822);
+    ---corfundodiv: rgba(15, 92, 56, 0.726);
+    ---cordestaque: rgba(53,140,121);
+    ---cinza: rgb(119, 117, 117);
+}
+
+* {
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.eins {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.eins h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+section.zwei {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+section.zwei img{
+    width: 500px;
+    height: 500px;
+}
+
+section.zwei .sobre{
+
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+section.zwei .zwei_main{
+
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.zwei_main .sobre {
+
+    width: 500px;
+    height: auto;
+}
+
+.sobre h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-size:  20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/*imagem*/
+
+.imagemtexto{
+
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+@media only screen and (max-width:768px){
+    .eins {
+        margin-top: 0px;
+    }
+    
+    .zwei {
+        display: flex;
+    }
+
+    #drei {
+       flex-wrap: wrap-reverse;
+    }
+    
+    section.zwei img{
+        height: auto;
+        width: 350px;
+    }
+
+    .sobre p{
+        font-size: 20px;
+        margin: 25px;
+    }
+
+    .sobre h3{
+        font-size: 36px;
+        margin-bottom: 25px;
+        margin-top: 35px;
+    }
+}
